@@ -1,0 +1,134 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+#menu .navbar {
+    background-color: antiquewhite;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.logo {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+}
+
+.nav-link:hover {
+    color: red !important;
+}
+
+#container {
+    display: flex;
+}
+#page-wrapper #container #content {
+    background-color: #f1f2ed;
+    border: 1px solid #f1f2ed;
+    width: 25%;
+    margin: 100px 50px auto auto;
+}
+
+#page-wrapper #container #register {
+    background-color: #f1f2ed;
+    border: 1px solid #f1f2ed;
+    width: 65%;
+    margin: 100px 0 20px 50px;
+}
+
+#page-wrapper #container #register .bigTitle {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 40px 0 0 40px;
+    color: #4f4848;
+
+}
+#page-wrapper #container #register .title {
+    color:#ba3c3a;
+    font-size: 22px;
+}
+.input-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+.selection {
+    margin: 40px 0 0 40px;
+
+}
+.labels {
+    text-align: left;
+    width: 30%;
+}
+.selection .rightTab{
+    width: 40%;
+}
+.selection .rightTab .input {
+    width: 100%;
+    height: 42px;
+    padding: 6px 10px;
+    cursor: text;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+}
+.selection .rightTab #bio {
+    width: 100%;
+    height: 100px;
+    padding: 6px 10px;
+    cursor: text;
+    border: 1px solid #e9e9e9;
+    border-radius: 5px;
+}
+
+.group-button {
+    margin: 20px 0 30px 40px;
+    display: flex;
+    flex-direction: column;
+}
+.group-button .btn {
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #4482FF;
+    border-color: #4482FF;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    line-height: 1.5;
+    padding: 0 25px;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 36px;
+    width: 15%;
+    margin-top: 20px;
+}
+.error {
+    color: #f5222d;
+}
+
+
+#content .tabAbout {
+    margin: 30px auto auto 20px;
+}
+
+#content .tabAbout .search-wrapper {
+    width: 90%;
+}
+#content .tabAbout .title {
+    margin-top: 20px;
+}
+
+#content .tabAbout .link{
+    margin: 10px 0 15px 0;
+}
+
+#content .tabAbout .link a {
+    color: #a9b2c2;
+}
+hr {
+    width: 92%;
+}
