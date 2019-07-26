@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    padding: 0;
+    margin: 7px 0;
+    max-height: 26px;
+}
+
+#header {
+    z-index: 997;
+    transition: all 0.5s;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif !important;
+    color: #528ceb !important;
+}
+
+#header .container .navbar li {
+    margin-right: 10px; 
+}
+
+#header .container .navbar li a {
+    color: #528ceb !important;
+}
+/*services*/
+#services {
+    padding: 60px 0 40px 0;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    background:#ecf5ff;
+    height: 100vh;
+}
+
+#services .container {
+    padding-top: 60px;
+}
+
+.section-header h3{
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.section-header p {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 60px;
+    color: #556877;
+    width: 50%;
+}
+#services .icon {
+    position: absolute;
+    left: 10px;
+    top: calc(50% - 32px);
+}
+#services .container .box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 10px 40px 10px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+ 
+}
+#services .container .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#services .title {
+    margin-left: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#services .description {
+    font-size: 14px;
+    margin-left: 40px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+/*About*/
+#about {
+    padding: 100px 0 40px 0;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+#about .container .about-container , .about-extra{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#about .about-container p {
+    line-height: 26px;
+}
+#about .about-container .icon-box {
+    background: #fff;
+    background-size: cover;
+    padding: 0 0 30px 0;
+}
+
+#about .about-container .icon-box .icon {
+    float: left;
+    background: #fff;
+    width: 64px;
+    height: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    transition: all 0.3s ease-in-out;
+}
+
+#about .about-container .icon-box .icon i {
+    color: #007bff;
+    font-size: 24px;
+}
+
+#about .about-container .icon-box .title {
+    margin-left: 80px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+#about .about-container .title {
+    color: #333;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#about .about-container .icon-box .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+#about .about-container p:last-child {
+    margin-bottom: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+#about .about-container .icon-box .title a {
+    color: #283d50;
+}
+
+.background {
+    margin-left: 20px;
+}
+
+#about .about-extra {
+    padding-top: 60px;
+}
+#about .about-extra h4 {
+    font-weight: 600;
+    font-size: 24px;
+}
