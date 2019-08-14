@@ -25,6 +25,9 @@ window.onload = () => {
                                 <li>
                                     <a href='/'>Đáp gọn</a>
                                 </li>
+                                <li>
+                                    <a href='/search'>Tìm kiếm</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -51,8 +54,8 @@ window.onload = () => {
             //like
             const like = document.getElementById('like');
             if (like) {
-                question.like = question.like + 1;
                 like.addEventListener('click', (event) => {
+                    question.like = question.like + 1;
                     event.preventDefault();
                     fetch('/update', {
                         method: "POST",
@@ -76,9 +79,9 @@ window.onload = () => {
             };
             //dislike
             const dislike = document.getElementById("dislike");
-            if(dislike){
-                question.dislike = question.dislike + 1;
+            if (dislike) {
                 dislike.addEventListener('click', (event) => {
+                    question.dislike = question.dislike + 1;
                     event.preventDefault();
                     fetch('/update', {
                         method: "POST",
@@ -102,16 +105,16 @@ window.onload = () => {
             };
             //ket qua vote
             const ketquavote = document.getElementById('ketquavote');
-            if(ketquavote){
-                ketquavote.addEventListener('click',event=>{
+            if (ketquavote) {
+                ketquavote.addEventListener('click', event => {
                     event.preventDefault();
                     window.location.href = `/question/${data.data.id}`;
                 });
             };
 
             const cauhoikhac = document.getElementById('cauhoikhac');
-            if(cauhoikhac){
-                cauhoikhac.addEventListener('click' , event=>{
+            if (cauhoikhac) {
+                cauhoikhac.addEventListener('click', event => {
                     window.localtion.href = '/question';
                 });
             }

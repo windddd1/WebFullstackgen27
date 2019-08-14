@@ -29,6 +29,9 @@ window.onload = () => {
                         <li>
                             <a href='/'>Đáp gọn</a>
                         </li>
+                        <li>
+                            <a href='/search'>Tìm kiếm</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -42,8 +45,8 @@ window.onload = () => {
             </div>
             <div class="row" >
                 <div class="col-xs-12 question_result" style="display: block;width: 100%;">
-                    <div id="question_result_no" style="width: 50%;background: #d9534f;float:left;">50%</div>
-                    <div id="question_result_yes" style="width: 50%;background: #337ab7;float:right;">50%</div>
+                    <div id="question_result_no" style="width: 50%;background: #d9534f;float:left;text-align: center;">50%</div>
+                    <div id="question_result_yes" style="width: 50%;background: #337ab7;float:right;text-align: center;">50%</div>
                 </div>
             </div>
             <div class="row text-center">
@@ -53,9 +56,9 @@ window.onload = () => {
             </div>
         </div>`;
                 app.insertAdjacentHTML('beforeend', item);
-            }else{
-                const like = (data.data.like/vote)*100;
-                const dislike = (data.data.dislike/vote)*100;
+            } else {
+                const like = (data.data.like / vote) * 100;
+                const dislike = (data.data.dislike / vote) * 100;
                 const item2 = `
             <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -72,6 +75,9 @@ window.onload = () => {
                         <li>
                             <a href='/'>Đáp gọn</a>
                         </li>
+                        <li>
+                            <a href='/search'>Tìm kiếm</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -85,8 +91,8 @@ window.onload = () => {
             </div>
             <div class="row" >
                 <div class="col-xs-12 question_result" style="display: block;width: 100%;">
-                    <div id="question_result_no" style="width: ${dislike}%;background: #d9534f;float:left;">${dislike}%</div>
-                    <div id="question_result_yes" style="width: ${like}%;background: #337ab7;float:right;">${like}%</div>
+                    <div id="question_result_no" style="width: ${dislike.toFixed(2)}%;background: #d9534f;float:left;text-align: center;">${dislike.toFixed(2)}%</div>
+                    <div id="question_result_yes" style="width: ${like.toFixed(2)}%;background: #337ab7;float:right;text-align: center;">${like.toFixed(2)}%</div>
                 </div>
             </div>
             <div class="row text-center">
@@ -98,8 +104,8 @@ window.onload = () => {
                 app.insertAdjacentHTML('beforeend', item2);
             };
             const xemcauhoikhac = document.getElementById('xemcauhoikhac');
-            if(xemcauhoikhac){
-                xemcauhoikhac.addEventListener('click',event=>{
+            if (xemcauhoikhac) {
+                xemcauhoikhac.addEventListener('click', event => {
                     event.preventDefault();
                     window.location.href = "/question";
                 })
